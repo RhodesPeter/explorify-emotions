@@ -18,6 +18,17 @@
   height: 100px;
   margin: 16px;
   position: relative;
+  cursor: pointer;
+}
+
+.dot {
+  background-color: black;
+  position: absolute;
+  top: -10px;
+  left: calc(50% + 20px);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
 .tick {
@@ -39,7 +50,7 @@
     top: -80px;
 }
 
-.tick:nth-of-type(5) {
+.tick:nth-of-type(5){
     top: -100px;
 }
 
@@ -57,4 +68,32 @@
 
 .tick:nth-of-type(9) {
     top: -180px;
+}
+
+.dot:nth-of-type(2) {
+    top: -30px;
+}
+
+.dot:nth-of-type(3) {
+    top: -50px;
+}
+
+.dot:nth-of-type(4) {
+    top: -70px;
+}
+
+.dot:nth-of-type(5) {
+    top: -90px;
+}
+
+.dot:nth-of-type(6) {
+    top: -110px;
+}
+
+.dot:nth-of-type(7) {
+    top: -130px;
+}
+
+.dot:nth-of-type(8) {
+    top: -150px;
 }
