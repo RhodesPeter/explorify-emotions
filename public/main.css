@@ -16,7 +16,8 @@
   height: 100px;
   margin: 16px;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  user-select: none; }
 
 .dot {
   background-color: black;
