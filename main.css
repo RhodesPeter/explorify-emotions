@@ -1,0 +1,60 @@
+.body {
+    height: 100vh;
+}
+
+.emotions {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100%;
+  font-size: 100px;
+}
+
+.emotions__emotion {
+  text-align: center;
+  width: 16.6%;
+  height: 100px;
+  margin: 16px;
+  position: relative;
+}
+
+.tick {
+  font-size: 24px;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 10px)
+}
+
+.tick:nth-of-type(2) {
+  top: -40px;
+}
+
+.tick:nth-of-type(3) {
+    top: -60px;
+}
+
+.tick:nth-of-type(4) {
+    top: -80px;
+}
+
+.tick:nth-of-type(5) {
+    top: -100px;
+}
+
+.tick:nth-of-type(6) {
+    top: -120px;
+}
+
+.tick:nth-of-type(7) {
+    top: -140px;
+}
+
+.tick:nth-of-type(8) {
+    top: -160px;
+}
+
+.tick:nth-of-type(9) {
+    top: -180px;
+}
