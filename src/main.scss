@@ -1,5 +1,67 @@
-.body {
-    height: 100vh;
+html, body{
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.nav {
+  text-align: right;
+  position: relative;
+}
+
+.nav__list {
+  padding: 24px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #ffea00;
+  margin: 8px 0;
+  list-style: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    right: 4px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ffea00;
+  }
+}
+
+.nav__button {
+    font-family: 'Helvetica';
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.burger {
+  display: inline-block;
+  padding: 4px;
+  border: 2px solid transparent;
+
+  &:focus {
+    outline: none;
+    border-color: #ffea00;
+  }
+}
+
+.burger-layer {
+  border-radius: 8px;
+  width: 25px;
+  height: 3px;
+  background-color: lightgray;
+  margin: 4px 0;
+
+  .burger--active & {
+    background-color: grey;
+  }
 }
 
 .emotions {
@@ -8,7 +70,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 800px;
-  height: 100%;
+  height: calc(100vh - 90px); // minus the nav
   font-size: 100px;
 }
 
@@ -49,4 +111,8 @@
       top: -20px * $i;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
