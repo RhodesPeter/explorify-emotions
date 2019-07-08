@@ -1,3 +1,14 @@
+const getWeekDay = () => {
+  const date = new Date();
+  console.log(date);
+
+  const weekdays = [
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+  ];
+
+  return weekdays[date.getDay()];
+}
+
 const handleEmojiClick = (e) => {
   const emotion = e.target;
 
@@ -17,3 +28,5 @@ const handleBurgerClick = (e) => {
   .forEach(el => el.addEventListener('click', handleEmojiClick));
 
 document.querySelector('.burger').addEventListener('click', handleBurgerClick);
+
+document.querySelector('.date').innerText = getWeekDay();

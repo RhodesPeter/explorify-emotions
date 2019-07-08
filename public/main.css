@@ -1,17 +1,20 @@
 html, body {
   min-height: 100vh;
   overflow: hidden;
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 0; }
 
 .nav {
-  text-align: right;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px; }
 
 .nav__list {
   padding: 24px;
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 48px;
+  right: 22px;
   background-color: #ffea00;
   margin: 8px 0;
   list-style: none; }
@@ -33,15 +36,17 @@ html, body {
   background-color: transparent;
   font-size: 1rem;
   border-bottom: 2px solid black;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
+  .nav__button:active {
+    transform: translateY(2px); }
 
 .burger {
   display: inline-block;
   padding: 4px;
   border: 2px solid transparent; }
   .burger:focus {
-    outline: none;
-    border-color: #ffea00; }
+    outline: none; }
 
 .burger-layer {
   border-radius: 8px;
@@ -51,6 +56,13 @@ html, body {
   margin: 4px 0; }
   .burger--active .burger-layer {
     background-color: grey; }
+
+.date {
+  margin: 0;
+  font-family: 'Helvetica';
+  font-size: 2rem;
+  line-height: 2rem;
+  color: grey; }
 
 .emotions {
   align-items: center;
