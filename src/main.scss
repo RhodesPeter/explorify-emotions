@@ -122,12 +122,12 @@ html, body{
 .tick {
   font-size: 24px;
   position: absolute;
-  top: -20px;
+  top: -70px;
   left: calc(50% - 10px);
 
   @for $i from 2 through 15 {
     &:nth-of-type(#{$i}) {
-      top: -20px * $i;
+      top: (-20px * $i) + -50px;
     }
   }
 }
