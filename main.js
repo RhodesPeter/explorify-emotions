@@ -1,12 +1,11 @@
 const getWeekDay = () => {
-  const date = new Date();
-  console.log(date);
+  const date = new Date().getDay();
 
   const weekdays = [
     'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
   ];
 
-  return weekdays[date.getDay()];
+  return weekdays[date];
 }
 
 const handleEmojiClick = (e) => {
